@@ -54,6 +54,6 @@ public class CustomView extends View implements ValueAnimator.AnimatorUpdateList
     public void onAnimationUpdate(ValueAnimator animation) {
         path.reset();
         angleFinal = (Integer)animation.getAnimatedValue();
-        invalidate();
+        postInvalidateOnAnimation()
     }
 }
